@@ -33,7 +33,7 @@ ms = mpb.ModeSolver(;
 ms.init_params(; p = mp.ALL, reset_fields = true)
 
 # obtain the symmetry vectors of the bands computed above
-brs = primitivize(calc_bandreps(sgnum, Val(D)))
+brs = primitivize(calc_bandreps(sgnum, Val(D))) # already primitive in SG 221, but necessary more generally
 symvecs, symeigsv = obtain_symmetry_vectors(ms, brs);
 
 nᵀ = symvecs[1] # pick the 2 lower bands which we are going to study
