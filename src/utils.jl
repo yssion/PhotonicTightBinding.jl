@@ -304,4 +304,3 @@ Intended for use in SymmetricTightBinding.jl's `spectrum` for photonic tight-bin
 """
 energy2frequency(λ::T) where T <: Real = sqrt(ifelse(λ < 0, convert(T, 0), λ)) # λ = ω²
 
-
