@@ -302,4 +302,4 @@ end
 Map a squared "energy" λ = ω² to a frequency ω, thresholding negative λ-values to 0.
 Intended for use in SymmetricTightBinding.jl's `spectrum` for photonic tight-binding models.
 """
-energy2frequency(λ::T) where T <: Real = sqrt(ifelse(λ < 0, convert(T, 0), λ)) # λ = ω²
+energy2frequency(λ::T) where T <: Real = sqrt(ifelse(λ < 0, convert(T, 0), λ)) # λ = ω² 
